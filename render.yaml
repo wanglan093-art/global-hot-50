@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: global-hot-50-api
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEWSAPI_KEY
+        sync: false
+    plan: free
