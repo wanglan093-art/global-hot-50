@@ -44,7 +44,10 @@ const SOURCES = {
   JaneDef:{color:'#2d4a7a',label:'JD',full:'简氏防务',lang:'en'},
   MilitaryTimes:{color:'#3a4a5a',label:'MT',full:'军事时报',lang:'en'},
   AlMonitor:{color:'#004d40',label:'AM',full:'Al-Monitor',lang:'en'},
-  WarZone:{color:'#b71c1c',label:'WZ',full:'The War Zone',lang:'en'}
+  WarZone:{color:'#b71c1c',label:'WZ',full:'The War Zone',lang:'en'},
+  CNRMil:{color:'#b71c1c',label:'央广军',full:'央广军事',lang:'zh'},
+  IfengMil:{color:'#d84315',label:'凤凰军',full:'凤凰网军事',lang:'zh'},
+  PLAOnline:{color:'#4a148c',label:'军网',full:'中国军网',lang:'zh'}
 };
 function isChinese(src){return SOURCES[src]&&SOURCES[src].lang==='zh';}
 function getSrc(key){return SOURCES[key]||{color:'#888',label:'??',full:key||'Unknown',lang:'en'};}
