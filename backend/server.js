@@ -14,7 +14,7 @@ app.use(express.json());
 app.get('/', function(_, res) {
   res.json({
     name: 'Global Hot 50 API',
-    version: '3.0.0',
+    version: '3.0.1',
     endpoint: '/api/trending/{domestic|international}/{finance|politics|military}',
     health: '/api/health',
     sources: {
@@ -60,7 +60,7 @@ app.get('/api/trending/:domain/:category', async function(req, res) {
 
 // Health
 app.get('/api/health', function(_, res) {
-  res.json({ status: 'ok', version: '3.0.0', uptime: process.uptime() });
+  res.json({ status: 'ok', version: '3.0.1', uptime: process.uptime() });
 });
 
 // 404
