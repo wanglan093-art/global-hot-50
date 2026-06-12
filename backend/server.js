@@ -18,10 +18,10 @@ app.get('/', function(_, res) {
     endpoint: '/api/trending/{domestic|international}/{finance|politics|military}',
     health: '/api/health',
     sources: {
-      domestic: 'CCTV (news.cctv.com) + Xinhua + PeopleDaily + 12 more',
-      international: 'NewsAPI (40+ sources) + RSS feeds (Nikkei, Yonhap, NHK, SCMP, DefenseNews, TWZ, etc.)',
-      total_sources: '45+ Chinese and English news outlets',
-      features: '50 items/category, 24h freshness, auto-translate international to Chinese'
+      domestic: 'CCTV (4 endpoints) + 5 Chinese RSS feeds (ChinaNews, PeopleDaily, ChinaDaily) + CNR Military + Ifeng Military',
+      international: 'NewsAPI (40+ sources) + 8 RSS feeds (SCMP, DefenseNews, WarZone, AlMonitor, StraitsTimes, Yonhap, NHK, TimesOfIndia)',
+      total_sources: '50+ Chinese and English news outlets',
+      features: '50 items/category, 48h freshness, scored military categorization, auto-translate international to Chinese'
     },
     cache: '10 minutes'
   });
