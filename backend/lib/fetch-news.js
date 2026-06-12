@@ -7,7 +7,7 @@ const { SOURCES, isChinese, getSrc } = require('./sources');
 const { translateBatch } = require('./translate');
 const RssParser = require('rss-parser');
 
-const NEWSAPI_KEY = process.env.NEWSAPI_KEY || '480168630be8476bb441a241ae4e3780';
+const NEWSAPI_KEY = process.env.NEWSAPI_KEY || '2f0b960a820e4900b2583fc103d808c5';
 const NEWSAPI_BASE = 'https://newsapi.org/v2';
 const TODAY = new Date().toISOString().split('T')[0];
 const CACHE_TTL = 10 * 60 * 1000;
@@ -155,7 +155,6 @@ async function fetchCCTV() {
 const rssParser = new RssParser({ timeout: 15000, headers: { 'User-Agent': 'GlobalHot50/3.0' } });
 
 const RSS_FEEDS = [
-  { url: 'https://asia.nikkei.com/rss/feed/nar', src: 'NikkeiAsia', cat: 'finance' },
   { url: 'https://en.yna.co.kr/RSS/news.xml', src: 'Yonhap', cat: 'politics' },
   { url: 'https://www3.nhk.or.jp/nhkworld/en/news/rss.xml', src: 'NHK', cat: 'politics' },
   { url: 'https://www.scmp.com/rss/91/news', src: 'SCMP', cat: 'politics' },
